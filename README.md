@@ -1,1 +1,1 @@
-# my_diplom_project
+# my_diplom
