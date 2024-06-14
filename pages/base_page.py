@@ -170,7 +170,7 @@ class WebPage(object):
                     pass
 
             if page_loaded and check_page_changes:
-                # Проверьть не изменился ли источник страницы
+                # Проверить не изменился ли источник страницы
                 new_source = ''
                 try:
                     new_source = self._web_driver.page_source
@@ -180,7 +180,7 @@ class WebPage(object):
                 page_loaded = new_source == source
                 source = new_source
 
-            # Подождить когда какой-то элемент исчезнет:
+            # Подождать когда какой-то элемент исчезнет:
             if page_loaded and wait_for_xpath_to_disappear:
                 bad_element = None
 
