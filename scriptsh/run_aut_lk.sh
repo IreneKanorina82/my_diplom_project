@@ -12,3 +12,4 @@
  # Запускаем pytest с использованием относительного пути к файлу test_my_project.py и директории с отчетами
  pytest -v -s "$TEST_FILE" --alluredir="$REPORT_DIR"
 
+
