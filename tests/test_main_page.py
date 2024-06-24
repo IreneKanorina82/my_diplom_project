@@ -1,5 +1,5 @@
 import pytest_check as check
-from locators.locators import MainPage
+from page_test.pages.locators import MainPage
 
 
 def test_headers(web_browser):
