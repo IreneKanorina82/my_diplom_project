@@ -3,7 +3,6 @@ import pytest_check as check
 from pages.base_page import MainPage
 
 
-
 @allure.story('Тест для проверки главной страницы')
 @allure.feature('Тест для проверки хедера')
 def test_headers(web_browser):
@@ -11,13 +10,14 @@ def test_headers(web_browser):
 
     page = MainPage(web_browser)
 
-    page.btn_pip_up_сookie.click()
+    page.btn_set_cookies.click()
 
     elements_headers = [
         (page.btn_headers_menu, 'Меню'),
+        (page.btn_headers_bad_vivion, 'Версия для слабовидящих')
         (page.btn_headers_RU, 'Русский'),
-        (page.btn_headers_ffpAccount, 'Личный кабинет'),
-        (page.btn_headers_bad_vision, 'Обычная версия')
+        (page.btn_headers_cloud, 'Личный кабинет'),
+        (page.btn_headers_mail, 'Обычная версия')
     ]
 
     for elements, elements_text in elements_headers:
@@ -29,4 +29,6 @@ def test_headers(web_browser):
 
         with allure.step(f'Сверка текста"{elements_text}"'):
             check.equal(elements.get_text(), elements_text)
+
+
 

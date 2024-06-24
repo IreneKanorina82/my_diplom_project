@@ -213,5 +213,10 @@ class WebPage(object):
 
 
 class MainPage:
+    def __init__(self):
+        self.input_id_transfer = None
+        self.btn_set_cookies = None
+        self.btn_domain_link = None
+
     pass
 

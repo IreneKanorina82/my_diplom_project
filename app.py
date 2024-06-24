@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    """ Эта функция запуская и отвечает за процесс возврата результата welcome.html. """
+    """ Эта функция запуская и отвечает за процесс возврата результата index.html. """
 
     return render_template('index.html')
 

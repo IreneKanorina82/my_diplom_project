@@ -1,6 +1,7 @@
 import allure
 import pytest_check as check
 from pages.base_page import MainPage
+import time
 
 
 @allure.story('Тест для проверки главной страницы')
@@ -10,14 +11,23 @@ def test_footers(web_browser):
 
     page = MainPage(web_browser)
 
-    page.btn_pip_up_сookie.click()
+    page.btn_setup_сookies.click()
 
     elements_footers = [
-        (page.btn_footers_kontakty, 'Контакты'),
-        (page.btn_footers_table, 'Табло вылета/прилета'),
-        (page.btn_headers_agentam, 'Агентам'),
-        (page.btn_headers_onair, 'Журнал OnAir')
+        (page.btn_footers_1_1, 'Контакты'),
+        (page.btn_footers_1_2, 'Расписание')
+        (page.btn_footers_1_3, 'Табло вылета/прилета'),
+        (page.btn_footers_1_4,'Обращения граждан')
+        (page.btn_footers_1_5, 'Грузовые перевозки')
+        (page.btn_footers_2_1, 'Агентам'),
+        (page.btn_footers_2_2, 'Журнал OnAir')
+        (page.btn_footers_2_3, 'Обратная связь')
+        (page.btn_footers_2_4, 'Для СМИ')
+        (page.btn_footers_2_5, '2024 - Год качества')
         ]
+
+    page.scroll_down()
+    time.sleep(1)
 
     for elements, elements_text in elements_footers:
         with allure.step(f'Проверка "{elements_text}" на отображение'):
@@ -28,4 +38,5 @@ def test_footers(web_browser):
 
         with allure.step(f'Сверка текста"{elements_text}"'):
             check.equal(elements.get_text(), elements_text)
+
 
