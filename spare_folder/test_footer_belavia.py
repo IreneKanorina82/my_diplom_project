@@ -11,7 +11,7 @@ def test_footers(web_browser):
 
     page = MainPage(web_browser)
 
-    """page.btn_set_сookies.click()"""
+    """page.btn_set_сookie.click()"""
 
     elements_footers = [
         (page.btn_footers_1_1, 'Контакты'),
@@ -38,5 +38,3 @@ def test_footers(web_browser):
 
         with allure.step(f'Сверка текста"{elements_text}"'):
             check.equal(elements.get_text(), elements_text)
-
-
