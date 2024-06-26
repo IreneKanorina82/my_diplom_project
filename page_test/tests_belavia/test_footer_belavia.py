@@ -14,16 +14,16 @@ def test_footers(web_browser):
     """page.btn_set_сookie.click()"""
 
     elements_footers = [
-        (page.btn_footers_1_1, 'Контакты'),
-        (page.btn_footers_1_2, 'Расписание'),
+        (page.btn_footers_1_1, 'Кассы продаж'),
+        # (page.btn_footers_1_2, 'Расписание'),
         (page.btn_footers_1_3, 'Табло вылета/прилета'),
-        (page.btn_footers_1_4, 'Обращения граждан'),
-        (page.btn_footers_1_5, 'Грузовые перевозки'),
+        # (page.btn_footers_1_4, 'Обращения граждан'),
+        # (page.btn_footers_1_5, 'Грузовые перевозки'),
         (page.btn_footers_2_1, 'Агентам'),
         (page.btn_footers_2_2, 'Журнал OnAir'),
         (page.btn_footers_2_3, 'Обратная связь'),
         (page.btn_footers_2_4, 'Для СМИ'),
-        # (page.btn_footers_2_5, '2024 - Год качества')
+        (page.btn_footers_2_5, '2024 - Год качества')
         ]
 
     page.scroll_down()

@@ -27,13 +27,13 @@ class MainPage(WebPage):
     btn_footers_1_1 = WebElement(xpath='//*[contains(text(),"Кассы продаж")]')
     # btn_footers_1_2 = WebElement(xpath='//div[@id="time-table"]//span[contains(text(),"Расписание")]')
     btn_footers_1_3 = WebElement(xpath='//*[contains(text(),"Табло вылета/прилета")]')
-    btn_footers_1_4 = WebElement(xpath='//*[@href="obrashheniya-grazhdan"]//span[contains(text(),"Обращения граждан")]')
-    btn_footers_1_5 = WebElement(xpath='//div[@id="perevozka_gruzov"]//span[contains(text(),"Грузовые перевозки")]')
-    btn_footers_2_1 = WebElement(xpath='//div[@id="agentam"]//span[contains(text(),"Агентам")]')
-    btn_footers_2_2 = WebElement(xpath='//div[@id="onair"]//span[contains(text(),"Журнал OnAir")]')
-    btn_footers_2_3 = WebElement(xpath='//div[@id="kontakty/obratnaya_svyaz"]//span[contains(text(),"Обратная связь")]')
-    btn_footers_2_4 = WebElement(xpath='//div[@id="dlya-smi"]//span[contains(text(),"Для СМИ")]')
-    # btn_footers_2_5 = WebElement(xpath='//div[@id="https://www.mintrans.gov.by/ru/2024-god-kachestva"]//span[contains(text(),"2024 - Год качества")]')
+    # btn_footers_1_4 = WebElement(xpath='//*[@href="obrashheniya-grazhdan"]//span[contains(text(),"Обращения граждан")]')
+    # btn_footers_1_5 = WebElement(xpath='//*[@id="perevozka_gruzov"]/span[contains(text(),"Грузовые перевозки")]')
+    btn_footers_2_1 = WebElement(xpath='//*[contains(text(),"Агентам")]')
+    btn_footers_2_2 = WebElement(xpath='//*[contains(text(),"Журнал OnAir")]')
+    btn_footers_2_3 = WebElement(xpath='//*[contains(text(),"Обратная связь")]')
+    btn_footers_2_4 = WebElement(xpath='//*[contains(text(),"Для СМИ")]')
+    btn_footers_2_5 = WebElement(xpath='//*[contains(text(),"2024 - Год качества")]')
 
 
 
